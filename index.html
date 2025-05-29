@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency | Bootstrap</title>
+    <meta name="robots" content="index, follow">
+    <meta name="description"
+        content="Serviço para dev fullstack, criação de langding pages, banco de daos, APIS, APPs, logotipo">
+    <meta name="keywords" content="Agency, Dev">
+    <meta name="author" content="Samuel Barbosa">
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap 5.3v -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrao Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS JS -->
+    <!-- animações -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
+    <!-- Galeria para os produtos -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
+    <!-- Carousel // slide -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet">
+    <!-- CSS personalisado // principal-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <a href="#home" class="logo d-flex align-items-center">
+                <h1 class="sitename">Agency</h1>
+            </a>
+            <!-- Menu -->
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li>
+                        <a href="#home" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#services">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#team">Equipe</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <!-- Hero Section // Slides -->
+        <section id="hero" class="hero dark-background">
+            <div id="hero-carousel" class="carousel slide carousel-fade">
+                <!-- Foto 1 -->
+                <div class="carousel-item active">
+                    <img src="./img/hero-carousel/hero-carousel-1.jpg" alt="">
+                    <div class="carousel-container">
+                        <h2>Bem Vindo a Agency</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatum iure officiis!
+                            Adipisci voluptatem, molestiae, ad, natus eius omnis asperiores possimus perferendis quia
+                            doloribus quod magnam et sed reprehenderit quis!
+                        </p>
+                        <!-- target="_blank" se o href for um link para um site externo esse site abrira em outra guia -->
+                        <a href="#about" class="btn btn-primary">Leia mais...</a>
+                    </div>
+                </div>
+                <!-- Foto 2 -->
+                <div class="carousel-item">
+                    <img src="./img/hero-carousel/hero-carousel-2.jpg" alt="">
+                    <div class="carousel-container">
+                        <h2>Foto 2</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatum iure officiis!
+                            Adipisci voluptatem, molestiae, ad, natus eius omnis asperiores possimus perferendis quia
+                            doloribus quod magnam et sed reprehenderit quis!
+                        </p>
+                        <a href="#about" class="btn btn-primary">Leia mais...</a>
+                    </div>
+                </div>
+                <!-- Foto 3 -->
+                <div class="carousel-item">
+                    <img src="./img/hero-carousel/hero-carousel-3.jpg" alt="">
+                    <div class="carousel-container">
+                        <h2>Foto 3</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatum iure officiis!
+                            Adipisci voluptatem, molestiae, ad, natus eius omnis asperiores possimus perferendis quia
+                            doloribus quod magnam et sed reprehenderit quis!
+                        </p>
+                        <!-- target="_blank" se o href for um link para um site externo esse site abrira em outra guia -->
+                        <a href="#about" class="btn btn-primary">Leia mais...</a>
+                    </div>
+                </div>
+                <!-- Controles -->
+                <!-- Prev -->
+                <a href="#hero-carousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true">
+                    </span>
+                </a>
+                <!-- Next -->
+                <a href="#hero-carousel" class="carousel-control-next" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true">
+                    </span>
+                </a>
+                <ol class="carousel-indicators"></ol>
+            </div>
+        </section>
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-5 position-relative">
+                        <img src="./img/about.jpg" alt="" class="img-fluid">
+                        <a href="https://www.youtube.com/watch?v=WV0Re7eD2Sw" class="glightbox pulsating-play-btn"></a>
+                    </div>
+                    <div class="col-lg-7 content ps-lg-4">
+                        <h3>Sobre Nós</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos optio, enim blanditiis ratione
+                            magnam natus dignissimos explicabo, fugiat illo itaque ad debitis est, deserunt expedita
+                            cumque maxime ea fuga voluptatum?</p>
+                        <ul>
+                            <li>
+                                <i class="bi bi-diagram-3"></i>
+                                <div>
+                                    <h5>Pilar 1</h5>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui alias placeat
+                                        facere, numquam accusantium repellendus magnam dolorem perspiciatis voluptas.
+                                        Ullam explicabo possimus libero iusto blanditiis illum ab iste porro cumque?</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-broadcast"></i>
+                                <div>
+                                    <h5>Pilar 2</h5>
+                                    <p>Qui alias placeat
+                                        facere, numquam accusantium repellendus magnam dolorem perspiciatis voluptas.
+                                        Ullam explicabo possimus libero iusto blanditiis illum ab iste porro cumque?</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-fullscreen-exit"></i>
+                                <div>
+                                    <h5>Pilar 3</h5>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui alias placeat
+                                        facere, numquam accusantium repellendus magnam dolorem perspiciatis voluptas.
+                                        Ullam explicabo possimus libero iusto blanditiis illum ab iste porro cumque?</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis quisquam temporibus at
+                            tempore possimus ipsam quidem doloribus rerum, consequuntur, error natus doloremque mollitia
+                            consequatur voluptate aliquam dolore sit eligendi! </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="stats" class="stats section light-background">
+            <div class="container">
+                <div class="row gy-4">
+                    <!-- Objeto 1 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-emoji-smile"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="3"
+                                class="purecounter"></span>
+                            <p><strong>
+                                    Clientes
+                                </strong>
+                                <span>
+                                    Satisfeitos
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Objeto 2 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-journal-richtext"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="3"
+                                class="purecounter"></span>
+                            <p>
+                                <span>
+                                    Portifolio
+                                </span>
+                                <strong>
+                                    Realizado
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Objeto 3 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-apple"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="56" data-purecounter-duration="3"
+                                class="purecounter"></span>
+                            <p>
+                                <span>
+                                    Projetos para
+                                </span>
+                                <strong>
+                                    Apple
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Objeto 4 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-android"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="59" data-purecounter-duration="3"
+                                class="purecounter"></span>
+                            <p>
+                                <span>
+                                    Projetos para
+                                </span>
+                                <strong>
+                                    Android
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services">
+            <div class="container section-title" data-aos="fade-up">
+                <h2 class="">Serviços</h2>
+                <div>
+                    <span>Conheça os nossos</span>
+                    <span class="description-title">Serviços</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <!-- Serviço 1 -->
+                    <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+                        <div>
+                            <h4 class="title">Serviço 1</h4>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                magnam dicta eum corporis facere deserunt ut, esse odit reprehenderit similique
+                                recusandae</p>
+                            <a href="#hero" class="readmore stretched-link">
+                                Leia mais
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Serviço 2 -->
+                    <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi bi-card-checklist"></i>
+                        </div>
+                        <div>
+                            <h4 class="title">Serviço 2</h4>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                magnam dicta eum corporis facere deserunt ut, esse odit reprehenderit similique
+                                recusandae</p>
+                            <a href="#services" class="readmore stretched-link">
+                                Leia mais
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Serviço 3 -->
+                    <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi bi-bar-chart"></i>
+                        </div>
+                        <div>
+                            <h4 class="title">Serviço 3</h4>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                magnam dicta eum corporis facere deserunt ut, esse odit reprehenderit similique
+                                recusandae</p>
+                            <a href="#services" class="readmore stretched-link">
+                                Leia mais
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Serviço 4 -->
+                    <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi bi-calendar4-week"></i>
+                        </div>
+                        <div>
+                            <h4 class="title">Serviço 4</h4>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                magnam dicta eum corporis facere deserunt ut, esse odit reprehenderit similique
+                                recusandae</p>
+                            <a href="#services" class="readmore stretched-link">
+                                Leia mais
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Serviço 5 -->
+                    <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi bi-binoculars"></i>
+                        </div>
+                        <div>
+                            <h4 class="title">Serviço 5</h4>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                magnam dicta eum corporis facere deserunt ut, esse odit reprehenderit similique
+                                recusandae</p>
+                            <a href="#services" class="readmore stretched-link">
+                                Leia mais
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Serviço 6 -->
+                    <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="600">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi bi-sun"></i>
+                        </div>
+                        <div>
+                            <h4 class="title">Serviço 6</h4>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                magnam dicta eum corporis facere deserunt ut, esse odit reprehenderit similique
+                                recusandae</p>
+                            <a href="#services" class="readmore stretched-link">
+                                Leia mais
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- parallax -- action whatsApp -->
+        <section id="call-to-action" class="call-to-action dark-background">
+            <img src="./img/cta-bg.jpg" alt="">
+            <div class="container">
+                <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-lg-4 col-sm-4">
+                        <div class="text-center">
+                            <h3>Entre em contato</h3>
+                            <p>Para maiores duvidas entre em contato com o nosso time</p>
+                            <a href="https://wa.me/5511" class="cta-btn" target="_blank">
+                                <i class="bi bi-whatsapp"></i>
+                                whatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <div class="container section-title">
+                <h2>Portifolio</h2>
+                <div>
+                    <span>Confira os nossos</span>
+                    <span class="description-title">Produtos</span>
+                </div>
+            </div>
+            <div class="container-fluid">
+
+                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+                    <!-- Menu Filtro -->
+                    <ul class="portfolio-filters isotope-filters" data-aos="fade-up">
+
+                        <li class="filter-active" data-filter="*"> Todos </li>
+                        <li data-filter=".filter-app"> APPs</li>
+                        <li data-filter=".filter-product"> Produtos</li>
+                        <li data-filter=".filter-branding"> Marcas</li>
+                        <li data-filter=".filter-books"> Livros</li>
+                    </ul>
+                    <div class="row g-0 isotope-container">
+                        <!-- Foto 1 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 isotope-item filter-app ">
+                            <div class="portfolio-content h-100">
+                                <img src="./img/portfolio/app-1.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="./img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Foto 2 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 isotope-item filter-product ">
+                            <div class="portfolio-content h-100">
+                                <img src="./img/portfolio/product-1.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="./img/portfolio/product-1.jpg " data-gallery="portfolio-gallery-product"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Foto 3 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 isotope-item filter-books">
+                            <div class="portfolio-content h-100">
+                                <img src="./img/portfolio/books-1.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="./img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-books"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Foto 4 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 isotope-item filter-branding">
+                            <div class="portfolio-content h-100">
+                                <img src="./img/portfolio/branding-1.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="./img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-branding"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Foto 5 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 isotope-item filter-app ">
+                            <div class="portfolio-content h-100">
+                                <img src="./img/portfolio/app-2.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="./img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Foto 6 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 isotope-item filter-product ">
+                            <div class="portfolio-content h-100">
+                                <img src="./img/portfolio/product-2.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="./img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-product"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Foto 7 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 isotope-item filter-books ">
+                            <div class="portfolio-content h-100">
+                                <img src="./img/portfolio/books-2.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="./img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-books"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Foto 8 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 isotope-item filter-branding ">
+                            <div class="portfolio-content h-100">
+                                <img src="./img/portfolio/branding-2.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="./img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-branding"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Foto 9 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 isotope-item filter-app ">
+                            <div class="portfolio-content h-100">
+                                <img src="./img/portfolio/app-3.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="./img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Foto 10 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 isotope-item filter-product ">
+                            <div class="portfolio-content h-100">
+                                <img src="./img/portfolio/product-3.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="./img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-product"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Foto 11 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 isotope-item filter-books ">
+                            <div class="portfolio-content h-100">
+                                <img src="./img/portfolio/books-3.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="./img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-books"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Foto 12 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 isotope-item filter-branding ">
+                            <div class="portfolio-content h-100">
+                                <img src="./img/portfolio/branding-3.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="./img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-branding"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="feedbacks" class="feedbacks">
+            <div class="container section-title">
+                <h2>Feedbacks</h2>
+                <div>
+                    <span>Confira as nossas</span>
+                    <span class="description-title">Avaliações</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <!-- feedbacks 1 -->
+                    <article class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+                        <div class="feedback-item">
+                            <img src="/img/testimonials/testimonials-1.jpg" alt="" class="feedback-img">
+                            <h3>Saul Goodman</h3>
+                            <h4>Ceo &amp; Fundador</h4>
+                            <h5>Nome Empresa</h5>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span class="fst-italic">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aspernatur impedit
+                                    tempore illo id voluptates deleniti omnis nam! Aperiam perspiciatis aliquid unde,
+                                    aut veniam repellendus neque sunt ut asperiores quo!
+                                </span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </article>
+                    <!-- feedbacks 2 -->
+                    <article class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+                        <div class="feedback-item">
+                            <img src="/img/testimonials/testimonials-2.jpg" alt="" class="feedback-img">
+                            <h3>Chun li</h3>
+                            <h4>Ceo &amp; Co-Fundador</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span class="fst-italic">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aspernatur impedit
+                                    tempore illo id voluptates deleniti omnis nam! Aperiam perspiciatis aliquid unde,
+                                    aut veniam repellendus neque sunt ut asperiores quo!
+                                </span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                        </div>
+                    </article>
+                    <!-- feedbacks 3 -->
+                    <article class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+                        <div class="feedback-item">
+                            <img src="/img/testimonials/testimonials-3.jpg" alt="" class="feedback-img">
+                            <h3>Kim Wexler</h3>
+                            <h4>Gerente</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span class="fst-italic">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aspernatur impedit
+                                    tempore illo id voluptates deleniti omnis nam! Aperiam perspiciatis aliquid unde,
+                                    aut veniam repellendus neque sunt ut asperiores quo!
+                                </span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                        </div>
+                    </article>
+                    <!-- feedbacks 4 -->
+                    <article class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+                        <div class="feedback-item">
+                            <img src="/img/testimonials/testimonials-4.jpg" alt="" class="feedback-img">
+                            <h3>Harry Osborn</h3>
+                            <h4>Developer</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span class="fst-italic">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aspernatur impedit
+                                    tempore illo id voluptates deleniti omnis nam! Aperiam perspiciatis aliquid unde,
+                                    aut veniam repellendus neque sunt ut asperiores quo!
+                                </span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                        </div>
+                    </article>
+                    <!-- feedbacks 5 -->
+                    <article class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+                        <div class="feedback-item">
+                            <img src="/img/testimonials/testimonials-5.jpg" alt="" class="feedback-img">
+                            <h3>Enzo Gabriel</h3>
+                            <h4>Cordenador de Projetos</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span class="fst-italic">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aspernatur impedit
+                                    tempore illo id voluptates deleniti omnis nam! Aperiam perspiciatis aliquid unde,
+                                    aut veniam repellendus neque sunt ut asperiores quo!
+                                </span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                        </div>
+                    </article>
+                    <!-- feedbacks 6 -->
+                    <article class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+                        <div class="feedback-item">
+                            <img src="/img/testimonials/testimonials-6.jpg" alt="" class="feedback-img">
+                            <h3>Angelina</h3>
+                            <h4>Cyber Segurança</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span class="fst-italic">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aspernatur impedit
+                                    tempore illo id voluptates deleniti omnis nam! Aperiam perspiciatis aliquid unde,
+                                    aut veniam repellendus neque sunt ut asperiores quo!
+                                </span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="team" class="team">
+            <div class="container section-title">
+                <h2>Equipe</h2>
+                <div>
+                    <span>Conheça Nosso</span>
+                    <span class="description-title">Time</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class=" row gy-4">
+                    <!-- Funcionario 1 -->
+                    <article class="col-xl-3 col-lg-6 col-md-6 team" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member">
+                            <img src="./img/team/team-1.jpg" alt="" class="img-fluid">
+                            <div class="member-info text-center">
+                                <div class="member-info-content">
+                                    <h3>Walter White</h3>
+                                    <span>Chefe Executivo</span>
+                                </div>
+                                <div class="social">
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Funcionario 2 -->
+                    <article class="col-xl-3 col-lg-6 col-md-6 team" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member">
+                            <img src="./img/team/team-2.jpg" alt="" class="img-fluid">
+                            <div class="member-info text-center">
+                                <div class="member-info-content">
+                                    <h3>Sheila</h3>
+                                    <span>CTO</span>
+                                </div>
+                                <div class="social">
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Funcionario 3 -->
+                    <article class="col-xl-3 col-lg-6 col-md-6 team" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member">
+                            <img src="./img/team/team-3.jpg" alt="" class="img-fluid">
+                            <div class="member-info text-center">
+                                <div class="member-info-content">
+                                    <h3>Carlos</h3>
+                                    <span>Diretor Executivo</span>
+                                </div>
+                                <div class="social">
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Founcionario 4 -->
+                    <article class="col-xl-3 col-lg-6 col-md-6 team" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member">
+                            <img src="./img/team/team-4.jpg" alt="" class="img-fluid">
+                            <div class="member-info text-center">
+                                <div class="member-info-content">
+                                    <h3>Vanesa</h3>
+                                    <span>Chefe Marketing</span>
+                                </div>
+                                <div class="social">
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container section-title">
+                <h2>Suporte</h2>
+                <div>
+                    <span>Precisa de ajuda?</span>
+                    <span class="description-title">Entre em contato</span>
+                </div>
+            </div>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4">
+                    <!-- Coluna 1 -->
+                    <div class="col-lg-6">
+                        <div class="row gy-4">
+                            <!-- Bloco 1 -->
+                            <div class="col-md-6"></div>
+                            <!-- Bloco 2 -->
+                            <div class="col-md-6"></div>
+                            <!-- Bloco 3 -->
+                            <div class="col-md-6"></div>
+                            <!-- Bloco 4 -->
+                            <div class="col-md-6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="footer">
+
+    </footer>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <!-- Bootstrap JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.js"></script>
+    <!-- Galeria para os Produtos -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+    <!-- Contado númerico -->
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <!-- Load imagens -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!-- Filtro  -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- Carousel // slide -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
